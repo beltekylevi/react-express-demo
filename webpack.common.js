@@ -22,17 +22,17 @@ module.exports = {
           fallback: 'style-loader',
           use: [
             {
-              loader: 'css-loader'
+              loader: 'css-loader',
             },
             {
               loader: 'sass-loader',
               options: {
-                outputStyle: 'expanded'
-              }
-            }
-          ]
-        })
-      }
+                outputStyle: 'expanded',
+              },
+            },
+          ],
+        }),
+      },
     ],
   },
   plugins: [
