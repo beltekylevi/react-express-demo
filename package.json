@@ -8,7 +8,8 @@
     "dev:frontend": "webpack-dev-server --colors --config webpack.dev.js --port 8080",
     "dev:backend": "node ./src/server/index.js",
     "lint": "eslint **/*.js",
-    "test:frontend": "jest --colors"
+    "test:frontend": "jest --colors",
+    "test:backend": "mocha --colors"
   },
   "repository": {
     "type": "git",
