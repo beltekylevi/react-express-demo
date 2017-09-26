@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --colors --config webpack.dev.js --port 8080",
-    "lint": "eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "test:frontend": "jest --colors",
   },
   "repository": {
     "type": "git",
