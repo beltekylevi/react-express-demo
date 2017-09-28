@@ -12,7 +12,8 @@
     "lint": "eslint **/*.js",
     "test": "npm-run-all --parallel test:frontend test:backend",
     "test:frontend": "jest --colors",
-    "test:backend": "mocha --colors"
+    "test:backend": "mocha --colors",
+    "heroku-prebuild": "npm install --only=dev"
   },
   "repository": {
     "type": "git",
