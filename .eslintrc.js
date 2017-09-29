@@ -1,5 +1,5 @@
 module.exports = {
-  'extends': 'google',
+  'extends': ['eslint:recommended', 'google'],
   'env': {
     'es6': true,
   },
@@ -12,7 +12,6 @@ module.exports = {
     'require-jsdoc': 0,
     'react/jsx-uses-vars': 2,
     'react/jsx-uses-react': 2,
-    'no-undef': 2,
     'indent': [2, 2],
   },
   'plugins': [
@@ -50,6 +49,12 @@ module.exports = {
       'files': ['test/**/*.test.js'],
       'env': {
         'mocha': true,
+      },
+    },
+    {
+      'files': ['src/server/**/*.js'],
+      'rules': {
+        'no-console': 0,
       },
     },
   ],
